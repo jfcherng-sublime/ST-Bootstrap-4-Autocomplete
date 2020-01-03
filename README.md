@@ -1,38 +1,37 @@
-# Bootstrap 4.3 Autocomplete - Sublime Text 3
-
-#### A sublime plugin complete with Bootstrap 4.3 Autocomplete
-###### 👉 Bootstrap 4.3 - Sublime Autocomplete - *(Currently Bootstrap v4.3.1)*
----
-
-If any classes left out in this plugin, please let us know via:
-
-| :globe_with_meridians: 	| [proficientdesigners.com](https://proficientdesigners.com/) |
-| :------ 					| :-----  |
-| :octocat: 				| [Issues](https://github.com/proficientdesigners/sublime-text-bs4-autocomplete/issues) |
-
-![screenshot](Screenshot_1.png)
-
-![screenshot](Screenshot_2.png)
+# Sublime-Bootstrap-4-Autocomplete
 
 
 ## Installation
-There are 3 methods for installing this plugin.
 
-1. Search for "Bootstrap 4.3 Autocomplete" via the "Package Control: Install Packages" menu.
-**Note:** If you don't have Sublime Package Control installed, you can find out how to install it here [https://sublime.wbond.net/installation](https://sublime.wbond.net/installation)
+This plugin is not published on Package Control (and probably never will be).
 
-2. Clone the repository into your Sublime Text 3 packages directory.
-`git clone https://github.com/proficientdesigners/sublime-text-bs4-autocomplete.git`
+To install this plugin, you have better to: Add a custom Package Control repository.
 
-3. Download the .zip file and unzip it into your Sublime Text 3 packages directory.
-**Note:** You can find your Sublime Text 3 packages directory by going to Preferences > Browse Packages.
+1. Go to `Preferences` » `Package Settings` » `Package Control` » `Settings - User`.
+1. Add custom repository and package name mapping as the following.
+   ```javascript
+   "package_name_map":
+   {
+     "Sublime-Bootstrap-4-Autocomplete": "Bootstrap 4 Autocomplete",
+   },
+   "repositories":
+   [
+     "https://github.com/jfcherng/Sublime-Bootstrap-4-Autocomplete",
+   ]
+   ```
+1. Restart Sublime Text.
+1. You should be able to install this package with Package Control with the name of `Bootstrap 4 Autocomplete`.
+1. Once this plugin has been published on Package Control, you can remove above settings.
 
-## Created & maintained by
 
-<p align="center">
-	<img src="https://proficientdesigners.com/img/logo_with_name.svg" width="300px" alt="proficientdesigners">
-</p>
+## Screenshots
+
+![screenshot](docs/screenshot.png)
+
 
 ## License
 
-Bootstrap 4.3 Autocomplete - Sublime Plugin is open-sourced software licensed under the [GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html).
+Forked and modified from [proficientdesigners/sublime-text-bs4-autocomplete](https://github.com/proficientdesigners/sublime-text-bs4-autocomplete)
+because I don't like how they implement it after [my proposed PR](https://github.com/proficientdesigners/sublime-text-bs4-autocomplete/pull/3) has been rejected without no given reason.
+
+This plugin is open-sourced under the [GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html).
