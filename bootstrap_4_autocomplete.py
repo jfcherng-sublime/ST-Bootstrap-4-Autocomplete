@@ -19,9 +19,5 @@ class Bootstrap4Completions(sublime_plugin.EventListener):
                 return self.class_completions
             else:
                 return []
-        elif view.match_selector(
-            locations[0], "text.html meta.tag - text.html punctuation.definition.tag.begin"
-        ):
-            return self.data_completions
         else:
             return []
