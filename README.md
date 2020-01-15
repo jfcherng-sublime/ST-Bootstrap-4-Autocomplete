@@ -26,7 +26,13 @@ To install this plugin, you have better to: Add a custom Package Control reposit
 
 ## Screenshots
 
-![screenshot](docs/screenshot.png)
+Sublime Text 3
+
+![screenshot-st3](docs/screenshot-st3.png)
+
+Sublime Text 4
+
+![screenshot-st4](docs/screenshot-st4.png)
 
 
 ## License
