@@ -5,7 +5,22 @@ import sublime_plugin
 
 class Bootstrap4Completions(sublime_plugin.EventListener):
     def __init__(self):
-        self.class_completions = [("%s \tBootstrap 4 Class" % s, s) for s in bs4_classes]
+        if int(sublime.version()) < 4000:
+            self.class_completions = [("%s\tBootstrap 4 Class" % s, s) for s in bs4_classes]
+        else:
+            self.class_completions = list(
+                map(
+                    lambda bs4_class: sublime.CompletionItem(
+                        trigger=bs4_class,
+                        annotation="Bootstrap 4 Class",
+                        completion=bs4_class,
+                        completion_format=sublime.COMPLETION_FORMAT_TEXT,
+                        kind=sublime.KIND_MARKUP,
+                    ),
+                    bs4_classes,
+                )
+            )
+
         self.working_scopes = ["meta.attribute-with-value.class.html"]
 
     def on_query_completions(self, view, prefix, locations):
