@@ -1,0 +1,8 @@
+Bootstrap Autocomplete
+----------------------
+
+v1.1.0
+------
+
+- Utilize scope: meta.attribute-with-value.class.html
+- Better support for ST4
