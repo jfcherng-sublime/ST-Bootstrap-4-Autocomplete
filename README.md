@@ -9,6 +9,7 @@ To install this plugin, you have better to: Add a custom Package Control reposit
 
 1. Go to `Preferences` » `Package Settings` » `Package Control` » `Settings - User`.
 1. Add custom repository and package name mapping as the following.
+
    ```javascript
    "package_name_map":
    {
@@ -17,8 +18,9 @@ To install this plugin, you have better to: Add a custom Package Control reposit
    "repositories":
    [
      "https://github.com/jfcherng/Sublime-Bootstrap-4-Autocomplete",
-   ]
+   ],
    ```
+
 1. Restart Sublime Text.
 1. You should be able to install this package with Package Control with the name of `Bootstrap 4 Autocomplete`.
 1. Once this plugin has been published on Package Control, you can remove above settings.
