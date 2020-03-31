@@ -1,6 +1,5 @@
 # Sublime-Bootstrap-4-Autocomplete
 
-
 ## Installation
 
 This plugin is not published on Package Control (and probably never will be).
@@ -17,14 +16,13 @@ To install this plugin, you have better to: Add a custom Package Control reposit
    },
    "repositories":
    [
-     "https://github.com/jfcherng/Sublime-Bootstrap-4-Autocomplete",
+     "https://github.com/jfcherng/Sublime-Bootstrap-4-Autocomplete.git",
    ],
    ```
 
 1. Restart Sublime Text.
 1. You should be able to install this package with Package Control with the name of `Bootstrap 4 Autocomplete`.
 1. Once this plugin has been published on Package Control, you can remove above settings.
-
 
 ## Screenshots
 
@@ -35,7 +33,6 @@ Sublime Text 3
 Sublime Text 4
 
 ![screenshot-st4](docs/screenshot-st4.png)
-
 
 ## License
 
