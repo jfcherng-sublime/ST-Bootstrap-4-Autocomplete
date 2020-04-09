@@ -1,9 +1,0 @@
-Bootstrap Autocomplete
-----------------------
-
-v1.0.5
-------
-
-- Bootstrap 4.4.1
-- Better plugin data structure
-- Remove .no-sublime-package
