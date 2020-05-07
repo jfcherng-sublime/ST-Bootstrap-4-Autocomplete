@@ -1,4 +1,4 @@
-# Sublime-Bootstrap-4-Autocomplete
+# ST-Bootstrap-4-Autocomplete
 
 ## Installation
 
@@ -12,11 +12,11 @@ To install this plugin, you have better to: Add a custom Package Control reposit
    ```javascript
    "package_name_map":
    {
-     "Sublime-Bootstrap-4-Autocomplete": "Bootstrap 4 Autocomplete",
+     "ST-Bootstrap-4-Autocomplete": "Bootstrap 4 Autocomplete",
    },
    "repositories":
    [
-     "https://github.com/jfcherng/Sublime-Bootstrap-4-Autocomplete.git",
+     "https://github.com/jfcherng-sublime/ST-Bootstrap-4-Autocomplete.git",
    ],
    ```
 
