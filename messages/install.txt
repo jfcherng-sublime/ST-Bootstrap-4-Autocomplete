@@ -1,3 +1,0 @@
-## Bootstrap 4 Autocomplete
-
-Report issues: https://github.com/jfcherng/Sublime-Bootstrap-4-Autocomplete/issues
