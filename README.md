@@ -4,25 +4,12 @@
 
 This plugin is not published on Package Control (and probably never will be).
 
-To install this plugin, you have better to: Add a custom Package Control repository.
+To install this plugin via Package Control, you have to add a custom repository.
 
-1. Go to `Preferences` » `Package Settings` » `Package Control` » `Settings - User`.
-1. Add custom repository and package name mapping as the following.
-
-   ```javascript
-   "package_name_map":
-   {
-     "ST-Bootstrap-4-Autocomplete": "Bootstrap 4 Autocomplete",
-   },
-   "repositories":
-   [
-     "https://github.com/jfcherng-sublime/ST-Bootstrap-4-Autocomplete.git",
-   ],
-   ```
-
+1. Execute `Package Control: Add Repository` in the command palette.
+1. Add this custom repository: `https://raw.githubusercontent.com/jfcherng-sublime/ST-my-channel/master/packages.json`
 1. Restart Sublime Text.
-1. You should be able to install this package with Package Control with the name of `Bootstrap 4 Autocomplete`.
-1. Once this plugin has been published on Package Control, you can remove above settings.
+1. You should be able to install this package with Package Control with the name `Bootstrap 4 Autocomplete`.
 
 ## Screenshots
 
