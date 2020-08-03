@@ -1,5 +1,9 @@
 # ST-Bootstrap-4-Autocomplete
 
+## Note
+
+This plugin only supports ST 4.
+
 ## Installation
 
 This plugin is not published on Package Control (and probably never will be).
@@ -12,12 +16,6 @@ To install this plugin via Package Control, you have to add a custom repository.
 1. You should be able to install this package with Package Control with the name `Bootstrap 4 Autocomplete`.
 
 ## Screenshots
-
-Sublime Text 3
-
-![screenshot-st3](docs/screenshot-st3.png)
-
-Sublime Text 4
 
 ![screenshot-st4](docs/screenshot-st4.png)
 

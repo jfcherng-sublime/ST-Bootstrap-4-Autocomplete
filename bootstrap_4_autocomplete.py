@@ -1,25 +1,21 @@
-from .functions import get_completion_items
 import sublime
 import sublime_plugin
 
-COMPLETION_ITEMS = []
+from typing import List
 
-
-def plugin_loaded() -> None:
-    global COMPLETION_ITEMS
-
-    COMPLETION_ITEMS = get_completion_items()
+from .functions import get_completion_items
 
 
 class Bootstrap4Completions(sublime_plugin.EventListener):
-    def __init__(self):
-        self.working_scopes = ["meta.attribute-with-value.class.html"]
+    working_scopes = ["meta.attribute-with-value.class.html"]
 
-    def on_query_completions(self, view, prefix, locations) -> list:
+    def on_query_completions(
+        self, view: sublime.View, prefix: str, locations: List[int]
+    ) -> List[sublime.CompletionItem]:
         point = locations[0]
 
         if view.match_selector(point, "|".join(self.working_scopes)):
-            return COMPLETION_ITEMS
+            return get_completion_items()
 
         if view.match_selector(point, "text.html string.quoted"):
             LIMIT = 250
@@ -29,6 +25,6 @@ class Bootstrap4Completions(sublime_plugin.EventListener):
             parts = line.split("=")
 
             if len(parts) > 1 and parts[-2].strip().endswith("class"):
-                return COMPLETION_ITEMS
+                return get_completion_items()
 
         return []
